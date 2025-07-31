@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+
+
+# Ignore environment and sensitive files
+
+gemini.js
+
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
