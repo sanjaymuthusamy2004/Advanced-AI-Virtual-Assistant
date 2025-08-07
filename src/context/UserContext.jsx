@@ -71,7 +71,14 @@ function takeCommand(command){
         setResponse(true)
         setPrompt(date)
         setTimeout(()=>{setSpeaking(false)},5000) 
-}
+    }else if (command.includes("open") && command.includes("resume")){
+        window.open("https://drive.google.com/file/d/1ZjZNVGkj_POsCoksEY6SkYtT_oykupcR/view?usp=sharing","_blank")
+        speak("opening resume")
+        setResponse(true)
+        setPrompt("opening google...")
+        setTimeout(()=>{setSpeaking(false)},5000) 
+    }
+      
     else{
         aiResponse(command)
     }
